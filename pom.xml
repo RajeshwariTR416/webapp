@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion> 
+  <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
@@ -59,7 +59,6 @@
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.9.1</version>
-        <!-- Remove reportPlugins from here -->
       </plugin>
     </plugins>
 
@@ -142,33 +141,38 @@
   </build>
 
   <reporting>
-    <!-- Move your reporting configuration here -->
     <plugins>
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.0</version>
       </plugin>
+
       <plugin>
         <artifactId>maven-jxr-plugin</artifactId>
         <version>3.0.0</version>
       </plugin>
+
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.0.0</version>
       </plugin>
+
       <plugin>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>3.13.0</version>
       </plugin>
+
       <plugin>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>3.0.0</version>
       </plugin>
+
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>3.0.5</version>
       </plugin>
+
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
@@ -176,51 +180,56 @@
       </plugin>
     </plugins>
   </reporting>
-         
- <dependencies>
- <dependency>
-   <groupId>jakarta.servlet</groupId>
-   <artifactId>jakarta.servlet-api</artifactId>
-   <version>5.0.0</version> <!-- Or the latest compatible version -->
-   <scope>provided</scope>
-</dependency>
 
-<dependency>
-     <groupId>jakarta.servlet.jsp</groupId>
-     <artifactId>jakarta.servlet.jsp-api</artifactId>
-     <version>3.0.0</version> <!-- Or another compatible version -->
-     <scope>provided</scope>
-</dependency>
+  <dependencies>
+    <!-- Jakarta Servlet API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version> <!-- Use the latest version for Jakarta Servlet API -->
+      <scope>provided</scope>
+    </dependency>
 
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit-dep</artifactId>
-        <version>4.10</version>
-        <scope>test</scope>
-      </dependency>
+    <!-- Jakarta JSP API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <version>3.0.0</version> <!-- Use a compatible version for Jakarta JSP API -->
+      <scope>provided</scope>
+    </dependency>
 
-      <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-core</artifactId>
-        <version>2.2</version>
-        <scope>test</scope>
-      </dependency>
+    <!-- JUnit Dependency -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version> <!-- Updated version -->
+      <scope>test</scope>
+    </dependency>
 
-      <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-library</artifactId>
-        <version>2.2</version>
-        <scope>test</scope>
-      </dependency>
+    <!-- Hamcrest Core Dependency -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>2.2</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
 
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>4.9.0</version>
-        <scope>test</scope>
-      </dependency>
-    </dependencies>
- 
+    <!-- Hamcrest Library Dependency -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>2.2</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Mockito Core Dependency -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>4.9.0</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
@@ -234,4 +243,3 @@
   </prerequisites>
 
 </project>
-
