@@ -176,7 +176,8 @@
       </plugin>
     </plugins>
   </reporting>
-
+         
+ <dependencies>
  <dependency>
    <groupId>jakarta.servlet</groupId>
    <artifactId>jakarta.servlet-api</artifactId>
