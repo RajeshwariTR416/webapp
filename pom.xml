@@ -49,7 +49,7 @@
     <!-- JUnit Dependency -->
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <artifactId>junit-dep</artifactId>
       <version>4.13.2</version> <!-- Updated version -->
       <scope>test</scope>
     </dependency>
