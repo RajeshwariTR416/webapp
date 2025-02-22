@@ -28,6 +28,57 @@
       <url>file:///tmp/maven-project-site</url>
     </site>
   </distributionManagement>
+         
+         <!-- Jakarta Servlet API Dependency -->
+<dependencies>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version> <!-- Use the latest version for Jakarta Servlet API -->
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Jakarta JSP API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <version>3.0.0</version> <!-- Use a compatible version for Jakarta JSP API -->
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- JUnit Dependency -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version> <!-- Updated version -->
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Hamcrest Core Dependency -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>2.2</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Hamcrest Library Dependency -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>2.2</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Mockito Core Dependency -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>4.9.0</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+</dependencies>
+
 
   <build>
     <plugins>
@@ -182,54 +233,7 @@
   </reporting>
 
  
-    <!-- Jakarta Servlet API Dependency -->
-    <dependency>
-      <groupId>jakarta.servlet</groupId>
-      <artifactId>jakarta.servlet-api</artifactId>
-      <version>5.0.0</version> <!-- Use the latest version for Jakarta Servlet API -->
-      <scope>provided</scope>
-    </dependency>
-
-    <!-- Jakarta JSP API Dependency -->
-    <dependency>
-      <groupId>jakarta.servlet.jsp</groupId>
-      <artifactId>jakarta.servlet.jsp-api</artifactId>
-      <version>3.0.0</version> <!-- Use a compatible version for Jakarta JSP API -->
-      <scope>provided</scope>
-    </dependency>
-
-    <!-- JUnit Dependency -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version> <!-- Updated version -->
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Hamcrest Core Dependency -->
-    <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest-core</artifactId>
-      <version>2.2</version> <!-- Latest version -->
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Hamcrest Library Dependency -->
-    <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest-library</artifactId>
-      <version>2.2</version> <!-- Latest version -->
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Mockito Core Dependency -->
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>4.9.0</version> <!-- Latest version -->
-      <scope>test</scope>
-    </dependency>
-
+    
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
